@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            color: aliceblue;
+            border: 1px solid black;
+            margin: auto;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: aliceblue;
+
+        }
+        .baby{
+            height: 30px;
+            width: 195px;
+            background-color: aliceblue;
+        }
+        .baby:hover{
+            background-color: beige;
+        }
+        .loader{
+            display: flex;
+        }
+        .loader::before{
+            content: "";
+            height: 30px;
+            width: 30px;
+            background: white;
+            border: 1px solid whitesmoke;
+            border-top-color: black;
+            border-radius: 50%;
+            animation: loader 1s infinite linear;
+        }
+        @keyframes loader {
+            to{
+                transform: rotate(1turn);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=>
+        <input type="text" placeholder="username" class="baby"> </div>
+        <br>
+        <div class="baby">
+        <input type="text" placeholder="email" class="baby"> <br> </div>
+        <br>
+        <div class="baby">
+        <input type="password" placeholder="password" class="baby"> <br> </div>
+        <br>
+        <button class="button">Submit</button>
+        <div class="loader">
+            <input type="text" placeholder="waiting for network" style="text-align: justify; width: 100px;">
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 15
+        for(var b=1; b<=10; b++)
+        function multiplication (a){
+            var result = a*b;
+            return result;
+        }
+        var n= prompt("Please enter 3 digit number");
+        var o=0;
+        while(n>=0){
+            o = n%10 + o;
+            n=Math.floor(n/10);
+            console.log(o);
+        }
+    </script>
+</body>
+</html>

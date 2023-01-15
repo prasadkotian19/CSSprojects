@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobiledekho.net</title>
+    <link rel="stylesheet" href="mobile.css">
+    </head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="Images/logo.png" alt="brandlogo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="Images/mobile1.png" alt="Mobile Phones" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="Images/camera.png" alt="Camera">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>25 megapixel front camera</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="Images/processor.png" alt="Processor">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Snapdragon octocore processor</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="Images/display.png" alt="Display">
+                    <div>
+                        <h1>Display</h1>
+                        <p>7 inch gorilla glass display</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="Images/battery.png" alt="Battery">
+                    <div>
+                        <h1>Battery</h1>
+                        <p>Long lasting battery lifelong</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="Images/arrow.png" alt="uparrow" id="upbtn">
+            <h3>Features</h3>
+            <img src="Images/arrow.png" alt="downarrow" id="downbtn">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+        upbtn.onclick = function(){
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+        downbtn.onclick = function(){
+            rotatesum = rotatevalue + "rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+    </script>
+</body>
+</html>
